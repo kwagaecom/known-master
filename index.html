@@ -71,8 +71,26 @@ http://www.templatemo.com/tm-516-known
 
           </div>
      </section>
+<style>
+/* Center-align the toggle button on small screens */
+.navbar-header {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
 
+.navbar-toggle {
+    margin: 0 auto;
+    float: none;
+    display: inline-block;
+    position: relative;
+}
 
+/* Optional: Adjust padding to make sure it’s within view */
+.navbar-toggle {
+    padding: 8px 10px; /* Adjust if needed */
+}
+</style>
      <!-- HOME -->
         <section id="home">
           <div class="row">
@@ -595,7 +613,7 @@ http://www.templatemo.com/tm-516-known
 
                                               <div class="courses-detail">
                         <h3><a href="#">Class VII </a></h3>
-                        <p>Enhance your Math skills with interactive lessons.</p>
+                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal1">Enquiry Now</a>
                     </div>
 
                                              <div class="courses-info">
@@ -626,7 +644,7 @@ http://www.templatemo.com/tm-516-known
 
                                               <div class="courses-detail">
                         <h3><a href="#">Engineering Preperation</a></h3>
-                        <p>Understand the principles in engineering.</p>
+                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal4">Enquiry Now</a>
                     </div>
 
                                              <div class="courses-info">
@@ -657,7 +675,7 @@ http://www.templatemo.com/tm-516-known
 
                                             <div class="courses-detail">
                         <h3><a href="#">Medical Anatomy</a></h3>
-                        <p>Deep dive into the human anatomy for medical students.</p>
+                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal4">Enquiry Now</a>
                     </div>
 
                                              <div class="courses-info">
@@ -673,7 +691,7 @@ http://www.templatemo.com/tm-516-known
                                    </div>
                               </div>
 
-                              <div class="col-md-4 col-sm-4">
+                 <div class="col-md-4 col-sm-4">
                                    <div class="item">
                                         <div class="courses-thumb">
                                              <div class="courses-top">
@@ -688,7 +706,8 @@ http://www.templatemo.com/tm-516-known
 
                                             <div class="courses-detail">
                         <h3><a href="#">Bank Exam Preparation</a></h3>
-                        <p>Prepare effectively for various banking exams.</p>
+                        
+<a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal4">Enquiry Now</a>
                     </div>
 
                                              <div class="courses-info">
@@ -719,7 +738,7 @@ http://www.templatemo.com/tm-516-known
 
                                              <div class="courses-detail">
                         <h3><a href="#">Professional Communication</a></h3>
-                        <p>Enhance your professional communication skills.</p>
+                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal4">Enquiry Now</a>
                     </div>
 
                                              <div class="courses-info">
@@ -740,89 +759,139 @@ http://www.templatemo.com/tm-516-known
                </div>
           </div>
      </section>
-
-     <!-- TESTIMONIAL -->
-          <section id="testimonial">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="section-title">
-                    <h2>Student Reviews <small>from around the world</small></h2>
+<!-- Enquiry Modal -->
+ <div class="modal fade" id="inquiryModal1" tabindex="-1" aria-labelledby="inquiryModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inquiryModalLabel1">General Acupressure</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                
-                <div class="owl-carousel owl-theme owl-client">
-                    <div class="item">
-                        <div class="tst-image">
-                            <img src="images/tst-image1.jpg" class="img-responsive" alt="Jackson">
-                        </div>  
-                        <div class="tst-author">
-                            <h4>Jackson</h4>
-                            <span>Shopify Developer</span>
-                        </div>
-                        <h5>"Excellent Learning Environment!"</h5>
-                        <div class="tst-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj54gI6ib2z8kcUxvqEYpfBLH3K2F4lYbiKXcBS6HtKlJMPzZQy26GMOR3oWHXCBUZmnSLd9P3QbBoRIP0_njJrtXuGQGFIJaS-xJ0-TC6uvRHcRggO_XlGMKjnQnPI0wXvBMx9aAT8CVfX0paYMKWHdv5nJdpj0W3vp27uZ1pdzZVIvIzNfGPQQ10Es9D7/s320/accupressure.JPG" alt="Home Tutors for Primary" class="img-fluid" style="max-width: 100px;">
                     </div>
-
-                    <div class="item">
-                        <div class="tst-image">
-                            <img src="images/tst-image2.jpg" class="img-responsive" alt="Camila">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="name1" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name1" placeholder="Enter your name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email1" placeholder="Enter your email">
+                            </div>
                         </div>
-                        <div class="tst-author">
-                            <h4>Camila</h4>
-                            <span>Marketing Manager</span>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="phone1" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone1" placeholder="Enter your phone number">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="landline1" class="form-label">Landline Number</label>
+                                <input type="tel" class="form-control" id="landline1" placeholder="Enter your landline number">
+                            </div>
                         </div>
-                        <h5>Highly Recommended for Competition.</h5	>
-                        <div class="tst-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="tst-image">
-                            <img src="images/tst-image3.jpg" class="img-responsive" alt="Barbie">
-                        </div>
-                        <div class="tst-author">
-                            <h4>Barbie</h4>
-                            <span>Art Director</span>
-                        </div>
-                        <p>Donec erat libero, blandit vitae arcu eu, lacinia placerat justo. Sed sollicitudin quis felis vitae hendrerit.</p>
-                        <div class="tst-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="tst-image">
-                            <img src="images/tst-image4.jpg" class="img-responsive" alt="Andrio">
-                        </div>
-                        <div class="tst-author">
-                            <h4>Andrio</h4>
-                            <span>Web Developer</span>
-                        </div>
-                        <p>Nam eget mi eu ante faucibus viverra nec sed magna. Vivamus viverra sapien ex, elementum varius ex sagittis vel.</p>
-                        <div class="tst-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+
+     <!-- TESTIMONIAL -->
+  <section id="review" class="review">
+    <!-- Container for the reviews section -->
+    <div class="reviews-container">
+        <!-- Heading for the reviews section -->
+        <h2>What Customers Are Saying</h2>
+        <!-- Slider container holding all review boxes -->
+        <div class="reviews-slider">
+            <!-- Individual review boxes -->
+            <div class="review-box">
+                <p>"I came to the acupressure service feeling overwhelmed by chronic back pain. After just a few sessions, I noticed a remarkable difference.." - Mrs. Smith, Parent</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="review-box">
+                 <p>"As someone who juggles a demanding job and family responsibilities, I often feel stressed and anxious.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="review-box">
+                <p>"I was initially skeptical about acupressure, but I decided to give it a try after hearing about its benefits." - Mr. Anderson, Teacher</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="review-box">
+                 <p>"I struggled with insomnia for years, trying various remedies with little success. A friend suggested acupressure, and I was amazed at the results." - Emily R., Doctort</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="review-box">
+                <p>"The acupressure service has transformed my approach to health and wellness." - Mrs. Johnson, Parent</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            
+        </div>
+    </div>
 </section>
+<style>
+/* Reviews section styling */
+#reviews {
+    padding: 20px; /* Padding around the reviews section */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    color: #333; /* Dark text color for readability */
+    overflow: hidden; /* Hide any content that overflows the section */
+}
+
+/* Container for the reviews */
+.reviews-container {
+    max-width: 1200px; /* Max width to center the content */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center-align the text */
+    position: relative; /* Relative positioning for flexibility */
+}
+
+/* Styling for the section heading */
+.reviews-container h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2rem; /* Larger font size for prominence */
+}
+
+/* Slider that holds and scrolls the reviews */
+.reviews-slider {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: space-around; /* Space between review boxes */
+    align-items: center; /* Center items vertically */
+    flex-wrap: nowrap; /* Prevent wrapping, keep reviews in one line */
+    gap: 20px; /* Space between each review box */
+    animation: scrollReviews 15s linear infinite; /* Smooth, infinite scrolling animation */
+}
+
+/* Styling for each individual review box */
+.review-box {
+    min-width: 300px; /* Minimum width for each review box */
+    padding: 15px; /* Padding inside each box */
+    background: #fff; /* White background for the review box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 8px; /* Rounded corners for the review box */
+    font-size: 1rem; /* Standard font size for readability */
+}
+
+/* Styling for the star ratings */
+.stars {
+    margin-top: 10px; /* Space above the star ratings */
+    font-size: 1.5rem; /* Larger font size for visibility */
+    color: #FFA500; /* Gold color for the stars */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scrollReviews {
+    0% {
+        transform: translateX(100%); /* Start with the content off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End with the content off-screen to the left */
+    }
+}
+</style>
 
      <!-- CONTACT -->
      <section id="contact">
@@ -860,6 +929,13 @@ http://www.templatemo.com/tm-516-known
           </div>
      </section>       
         <!--================ Map Area  =================-->
+
+<!-- Include Lightbox2 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+<!-- Include Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
 <section class="gallery_area section_gap" id="gallery">
     <div class="container">
         <div class="section_title text-center">
@@ -869,92 +945,71 @@ http://www.templatemo.com/tm-516-known
         <div class="row imageGallery1">
             <div class="col-md-4 gallery_item">
                 <div class="gallery_img">
-                    <a href="images/1.jpg" data-lightbox="gallery" data-title="Gallery Image 01">
+                    <a href="images/1.jpg" data-lightbox="gallery-group" data-title="Gallery Image 01">
                         <img src="images/1.jpg" alt="Gallery Image 01">
                     </a>
                 </div>
             </div>
             <div class="col-md-4 gallery_item">
                 <div class="gallery_img">
-                    <a href="images/2.jpg" data-lightbox="gallery" data-title="Gallery Image 02">
+                    <a href="images/2.jpg" data-lightbox="gallery-group" data-title="Gallery Image 02">
                         <img src="images/2.jpg" alt="Gallery Image 02">
                     </a>
                 </div>
             </div>
             <div class="col-md-4 gallery_item">
                 <div class="gallery_img">
-                    <a href="images/3.jpg" data-lightbox="gallery" data-title="Gallery Image 03">
+                    <a href="images/3.jpg" data-lightbox="gallery-group" data-title="Gallery Image 03">
                         <img src="images/3.jpg" alt="Gallery Image 03">
                     </a>
                 </div>
             </div>
            <div class="col-md-4 gallery_item">
                 <div class="gallery_img">
-                    <a href="images/4.jpg" data-lightbox="gallery" data-title="Gallery Image 03">
-                        <img src="images/4.jpg" alt="Gallery Image 03">
-                    </a>
-                </div>
-            </div>
-<div class="col-md-4 gallery_item">
-                <div class="gallery_img">
-                    <a href="images/5.jpg" data-lightbox="gallery" data-title="Gallery Image 03">
-                        <img src="images/5.jpg" alt="Gallery Image 03">
-                    </a>
-                </div>
-            </div>
-<div class="col-md-4 gallery_item">
-                <div class="gallery_img">
-                    <a href="images/6.jpg" data-lightbox="gallery" data-title="Gallery Image 03">
-                        <img src="images/6.jpg" alt="Gallery Image 03">
-                    </a>
-                </div>
-            </div>
- <div class="col-md-4 gallery_item">
-                <div class="gallery_img">
-                    <a href="images/7.jpg" data-lightbox="gallery" data-title="Gallery Image 01">
-                        <img src="images/7.jpg" alt="Gallery Image 01">
+                    <a href="images/4.jpg" data-lightbox="gallery-group" data-title="Gallery Image 04">
+                        <img src="images/4.jpg" alt="Gallery Image 04">
                     </a>
                 </div>
             </div>
             <div class="col-md-4 gallery_item">
                 <div class="gallery_img">
-                    <a href="images/8.jpg" data-lightbox="gallery" data-title="Gallery Image 02">
-                        <img src="images/8.jpg" alt="Gallery Image 02">
+                    <a href="images/5.jpg" data-lightbox="gallery-group" data-title="Gallery Image 05">
+                        <img src="images/5.jpg" alt="Gallery Image 05">
                     </a>
                 </div>
             </div>
             <div class="col-md-4 gallery_item">
                 <div class="gallery_img">
-                    <a href="images/9.jpg" data-lightbox="gallery" data-title="Gallery Image 03">
-                        <img src="images/9.jpg" alt="Gallery Image 03">
+                    <a href="images/6.jpg" data-lightbox="gallery-group" data-title="Gallery Image 06">
+                        <img src="images/6.jpg" alt="Gallery Image 06">
                     </a>
                 </div>
             </div>
-           <div class="col-md-4 gallery_item">
+            <div class="col-md-4 gallery_item">
                 <div class="gallery_img">
-                    <a href="images/10.jpg" data-lightbox="gallery" data-title="Gallery Image 03">
-                        <img src="images/10.jpg" alt="Gallery Image 03">
+                    <a href="images/7.jpg" data-lightbox="gallery-group" data-title="Gallery Image 07">
+                        <img src="images/7.jpg" alt="Gallery Image 07">
                     </a>
                 </div>
             </div>
-<div class="col-md-4 gallery_item">
+            <div class="col-md-4 gallery_item">
                 <div class="gallery_img">
-                    <a href="images/11.jpg" data-lightbox="gallery" data-title="Gallery Image 03">
-                        <img src="images/11.jpg" alt="Gallery Image 03">
+                    <a href="images/8.jpg" data-lightbox="gallery-group" data-title="Gallery Image 08">
+                        <img src="images/8.jpg" alt="Gallery Image 08">
                     </a>
                 </div>
             </div>
-<div class="col-md-4 gallery_item">
+            <div class="col-md-4 gallery_item">
                 <div class="gallery_img">
-                    <a href="images/12.jpg" data-lightbox="gallery" data-title="Gallery Image 03">
-                        <img src="images/12.jpg" alt="Gallery Image 03">
+                    <a href="images/9.jpg" data-lightbox="gallery-group" data-title="Gallery Image 09">
+                        <img src="images/9.jpg" alt="Gallery Image 09">
                     </a>
                 </div>
             </div>
-            <!-- Repeat for other images -->
         </div>
     </div>
 </section>
+
 
 <section id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner" align="center">
@@ -1147,6 +1202,9 @@ http://www.templatemo.com/tm-516-known
           </div>
      </div>
 </footer>
+
+
+
 <style>
 #footer {
     background-color: #333;
@@ -1340,7 +1398,29 @@ http://www.templatemo.com/tm-516-known
             </h5>
         </button>
     </div>
+<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+   
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
      <!-- SCRIPTS -->
      <script src="js/jquery.js"></script>
      <script src="js/bootstrap.min.js"></script>
