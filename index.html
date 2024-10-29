@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-     <title>Instiute</title>
+     <title>Instiute-Instiute Near Me</title>
 <!-- 
 
 Known Template 
@@ -12,11 +12,11 @@ http://www.templatemo.com/tm-516-known
 -->
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
+     <meta name="description" content="Welcome to our institute, where we offer a diverse range of courses including software development, protocol training, data science, and more. Empower your career with hands-on learning and expert guidance.">
+    <meta name="keywords" content="educational institute, software courses, protocol training, data science, online learning, skill development, career advancement">
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+<link href="favicon-32x32.png" rel="icon">
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/font-awesome.min.css">
      <link rel="stylesheet" href="css/owl.carousel.css">
@@ -39,39 +39,52 @@ http://www.templatemo.com/tm-516-known
 
 
      <!-- MENU -->
-     <section class="navbar custom-navbar fixed-top" role="navigation">
-          <div class="container">
+    <section class="navbar custom-navbar fixed-top" role="navigation">
+     <div class="container">
 
-               <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                    </button>
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
 
-                    <!-- lOGO TEXT HERE -->
-                    <a href="#" class="navbar-brand">Known</a>
-               </div>
-
-               <!-- MENU LINKS -->
-               <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-nav-first">
-                         <li><a href="#top" class="smoothScroll">Home</a></li>
-                         <li><a href="#about" class="smoothScroll">About</a></li>
-                         <li><a href="#team" class="smoothScroll">Our Teachers</a></li>
-                         <li><a href="#courses" class="smoothScroll">Courses</a></li>
-                         <li><a href="#testimonial" class="smoothScroll">Reviews</a></li>
-                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#"><i class="fa fa-phone"></i> +65 2244 1100</a></li>
-                    </ul>
-               </div>
-
+               <!-- Logo -->
+               <a href="#courses" class="navbar-brand"><span class="badge bg-warning text-dark">Institute</span></a>
           </div>
-     </section>
 
+          <!-- Menu Links -->
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="#top" class="smoothScroll" onclick="collapseNavbar()">Home</a></li>
+                    <li><a href="#about" class="smoothScroll" onclick="collapseNavbar()">About</a></li>
+                    <li><a href="#team" class="smoothScroll" onclick="collapseNavbar()">Our Teachers</a></li>
+                    <li><a href="#courses" class="smoothScroll" onclick="collapseNavbar()">Courses</a></li>
+                    <li><a href="#testimonial" class="smoothScroll" onclick="collapseNavbar()">Reviews</a></li>
+                    <li><a href="#contact" class="smoothScroll" onclick="collapseNavbar()">Contact</a></li>
+               </ul>
+
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-phone"></i> +91 22344 11005</a></li>
+               </ul>
+          </div>
+
+     </div>
+</section>
+
+<script>
+function collapseNavbar() {
+     var navbarCollapse = document.querySelector(".navbar-collapse");
+     var navbarToggle = document.querySelector(".navbar-toggle");
+
+     // Check if navbar is expanded and then collapse it
+     if (navbarCollapse.classList.contains("in")) {
+          navbarCollapse.classList.remove("in");
+          navbarCollapse.classList.add("collapse");
+          navbarToggle.classList.add("collapsed");
+     }
+}
+</script>
 
      <!-- HOME -->
         <section id="home">
@@ -96,14 +109,14 @@ http://www.templatemo.com/tm-516-known
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control" name="class" required>
-                                            <option value="" disabled selected>Select Class</option>
-                                            <option value="Class VI">Class VI</option>
-                                            <option value="Class VII">Class VII</option>
-                                            <option value="Class VIII">Class VIII</option>
-                                            <option value="Class IX">Class IX</option>
-                                            <option value="Class X">Class X</option>
-                                            <option value="Class XI">Class XI</option>
-                                            <option value="Class XII">Class XII</option>
+                                            <option value="" disabled selected>Select Course</option>
+                                            <option value="Web development">Web Development</option>
+                                            <option value="Software development">Software Development</option>
+                                            <option value="Graphic Design">Graphic Design</option>
+                                            <option value="Ethical Hacking">Ethical Hacking</option>
+                                            <option value="Networking course">Networking Course</option>
+                                            <option value="Protocol development">Protocol Development</option>
+                                           
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -134,11 +147,14 @@ http://www.templatemo.com/tm-516-known
                          <div class="item item-third">
                               <div class="caption">
                                    <div class="container">
-                                        <div class="col-md-6 col-sm-12">
-                                             <h1>Efficient Learning Methods</h1>
-                                             <h3>Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque eu ex eu urna venenatis sollicitudin ut at libero. Visit <a href="https://plus.google.com/+templatemo" target="_parent">templatemo</a> page.</h3>
-                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">Let's chat</a>
-                                        </div>
+                                        <div class="col-md-6 col-sm-12 institute-section">
+    <h1>Empowering Education</h1>
+    <p>Our institute is committed to providing innovative and effective learning methods to enhance students' knowledge and skills. Discover the path to excellence with us.
+        <a href="https://plus.google.com/+templatemo" target="_blank">Learn more</a> about our programs and resources.
+    </p>
+    <a href="#contact" class="section-btn btn btn-primary smoothScroll">Get in Touch</a>
+</div>
+
                                    </div>
                               </div>
                          </div>
@@ -161,27 +177,27 @@ http://www.templatemo.com/tm-516-known
                 
 
                               <figure>
-                                   <span><i class="fa fa-users"></i></span>
-                                   <figcaption>
-                                       <h3>Class VI - VIII</h3>
-                                <p>Engaging curriculum with interactive learning for younger students.</p>
-                                   </figcaption>
+                                   <span class="icon"><i class="fa fa-users"></i></span>
+        <figcaption>
+            <h3>Protocol Development</h3>
+            <p>Engaging curriculum with interactive learning for younger students.</p>
+        </figcaption>
                               </figure>
 
                               <figure>
-                                   <span><i class="fa fa-certificate"></i></span>
-                                   <figcaption>
-                                       <h3>Class IX - X</h3>
-                                <p>Preparation for board exams with a focus on core subjects and exam strategies.</p>
-                                   </figcaption>
+                                 <span class="icon"><i class="fa fa-certificate"></i></span>
+        <figcaption>
+            <h3>Software Development</h3>
+            <p>Preparation for board exams with a focus on core subjects and exam strategies.</p>
+        </figcaption>
                               </figure>
 
                               <figure>
-                                   <span><i class="fa fa-bar-chart-o"></i></span>
-                                   <figcaption>
-                                        <h3>Class XI - XII</h3>
-                                <p>Advanced courses with specialization options to help students excel in their chosen fields.</p>
-                                   </figcaption>
+                                    <span class="icon"><i class="fa fa-chart"></i></span>
+        <figcaption>
+            <h3>Ethical Hacking</h3>
+            <p>Advanced courses with specialization options to help students excel in their chosen fields.</p>
+        </figcaption>
                               </figure>
                          </div>
                     </div>
@@ -204,12 +220,12 @@ http://www.templatemo.com/tm-516-known
      <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your Phone Number" required>
   </div>
   <div class="col">
-    <input type="date" id="meeting-date" name="meeting-date" class="form-control" required>
+    <input type="date" id="meeting-date" placeholder="data-target"name="meeting-date" class="form-control" required>
   </div>
 </div>
 <div class="row">
   <div class="col">
-     <input type="time" id="meeting-time" name="meeting-time" class="form-control" required>
+     <input type="time" id="meeting-time"placeholder="meeting-time" name="meeting-time" class="form-control" required>
   </div>
   
 </div>
@@ -571,7 +587,7 @@ http://www.templatemo.com/tm-516-known
     <div id="carouselContainer" style="display: flex; transition: transform 0.5s ease;">
         <!-- Card 1 -->
         <div style="min-width: 100%; box-sizing: border-box; padding: 20px; text-align: center; background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; margin: 10px;">
-           <div class="col-md-4 col-sm-4">
+           <div class="col-md-4 col-sm-4"id="courses">
                                    <div class="item">
                                         <div class="courses-thumb">
                                              <div class="courses-top">
@@ -608,7 +624,7 @@ http://www.templatemo.com/tm-516-known
 
                                             <div class="courses-detail">
                         <h3><a href="#">Software Development  </a></h3>
-                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal1"><span class="badge bg-info">Enquiry Now</span></a>
+                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal2"><span class="badge bg-info">Enquiry Now</span></a>
                     </div>
 
                                             
@@ -631,7 +647,7 @@ http://www.templatemo.com/tm-516-known
 
                                               <div class="courses-detail">
                         <h3><a href="#">Web Development </a></h3>
-                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal4"><span class="badge bg-danger">Enquiry Now</span></a>
+                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal3"><span class="badge bg-danger">Enquiry Now</span></a>
                     </div>
 
                                           
@@ -658,7 +674,7 @@ http://www.templatemo.com/tm-516-known
 
                                              <div class="courses-detail">
                         <h3><a href="#">Networking Course </a></h3>
-                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal1"><span class="badge bg-secondary">Enquiry Now</span></a>
+                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal4"><span class="badge bg-secondary">Enquiry Now</span></a>
                     </div>
 
                                              
@@ -682,7 +698,7 @@ http://www.templatemo.com/tm-516-known
 
                                             <div class="courses-detail">
                         <h3><a href="#">Ethical Hacking </a></h3>
-                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal1"><span class="badge bg-success">Enquiry Now</span></a>
+                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal5"><span class="badge bg-success">Enquiry Now</span></a>
                     </div>
 
                                              
@@ -705,7 +721,7 @@ http://www.templatemo.com/tm-516-known
 
                                               <div class="courses-detail">
                         <h3><a href="#">Graphic Design</a></h3>
-                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal4"><span class="badge bg-primary">Enquiry Now</span></a>
+                        <a href="#" class="enquiry-button" data-toggle="modal" data-target="#inquiryModal6"><span class="badge bg-primary">Enquiry Now</span></a>
                     </div>
 
                                              
@@ -734,12 +750,462 @@ http://www.templatemo.com/tm-516-known
     }
 </script>
 
+<div class="modal fade" id="inquiryModal1" tabindex="-1" aria-labelledby="inquiryModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel1"> <h6 ><button type="button" class="btn btn-warning btn-sm"> Enquiry for  </button><button type="button" class="btn btn-info btn-sm">Protocol  </button><button type="button" class="btn btn-danger btn-sm">Development Course</button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1061357372/photo/quality-control-certification-checked-guarantee-of-standard.webp?a=1&b=1&s=612x612&w=0&k=20&c=FNZMvwavnCPVNo1qf2FTwFzQyIiLDsLkq96Ya_DgEKA='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-tourist"></i></div>
+                 <form id="acupressureBookingForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col">
+              <label for="patientName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="Name" placeholder="Enter patient's name" required>
+            </div>
+            <div class="col">
+              <label for="patientName" class="form-label">Email Address</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter email's id" required>
+            </div>
+</div>
 
+
+            <!-- Patient Age -->
+            <div class="row">
+            <div class="col">
+              <label for="applicantPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="applicantPhone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="col">
+              <label for="contactMethod" class="form-label">Preferred Contact Method</label>
+              <select class="form-select" id="contactMethod" required>
+                <option selected disabled>Select Contact Method</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone Call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Travel Information -->
+          <div class="row">
+            <div class="col">
+              <label for="courseType" class="form-label">Select Course Type</label>
+            <select class="form-select" id="courseType" required>
+              <option selected disabled>Select Course Type</option>
+              <option value="basic">Basic Protocol Development</option>
+              <option value="intermediate">Intermediate Protocol Development</option>
+              <option value="advanced">Advanced Protocol Development</option>
+              <option value="customized">Customized Protocol Development</option>
+            </select>
+            </div>
+           
+          </div>
+
+          <!-- Passport Information -->
+         
+
+          <!-- Additional Message -->
+          <div class="mb-3">
+            <label for="visaMessage" class="form-label">Additional Requirements or Message</label>
+            <textarea class="form-control" id="visaMessage" rows="4" placeholder="Enter any additional information or questions" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-success w-100">Submit Order</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
      <!-- Courses -->
-     
+     <div class="modal fade" id="inquiryModal2" tabindex="-1" aria-labelledby="inquiryModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel2"> <h6 ><button type="button" class="btn btn-warning btn-sm"> Enquiry for  </button><button type="button" class="btn btn-info btn-sm">Software  </button><button type="button" class="btn btn-danger btn-sm">Development Course</button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1466262366/photo/software-development-branching-strategy-process-workflow-with-flowchart-diagram-showing.webp?a=1&b=1&s=612x612&w=0&k=20&c=66f4Ak6jHrNrIJG2W3DFUJ4Ka8MkgfcdtC4OBsEvC6s=" class="img-responsive'); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-tourist"></i></div>
+                 <form id="acupressureBookingForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col">
+              <label for="patientName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="Name" placeholder="Enter patient's name" required>
+            </div>
+            <div class="col">
+              <label for="patientName" class="form-label">Email Address</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter email's id" required>
+            </div>
+</div>
+
+
+            <!-- Patient Age -->
+            <div class="row">
+            <div class="col">
+              <label for="applicantPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="applicantPhone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="col">
+              <label for="contactMethod" class="form-label">Preferred Contact Method</label>
+              <select class="form-select" id="contactMethod" required>
+                <option selected disabled>Select Contact Method</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone Call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Travel Information -->
+          <div class="row">
+            <div class="col">
+            <label for="courseType" class="form-label">Select Course Type</label>
+            <select class="form-select" id="courseType" required>
+              <option selected disabled>Select Course Type</option>
+              <option value="Mobile Development">Mobile Development</option>
+              <option value="Game Development">Game Development</option>
+              <option value="Software Engineering">Software Engineering</option>
+              <option value="Data Science and Machine Learning">Data Science and Machine Learning</option>
+              <option value="software_testing">Software Testing</option>
+              <option value="Database Management">Database Management</option>
+              <option value="Programming Languages">Programming Languages</option>
+            </select>
+            </div>
+           
+          </div>
+
+          <!-- Passport Information -->
+         
+
+          <!-- Additional Message -->
+          <div class="mb-3">
+            <label for="visaMessage" class="form-label">Additional Requirements or Message</label>
+            <textarea class="form-control" id="visaMessage" rows="4" placeholder="Enter any additional information or questions" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-success w-100">Submit Order</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- Enquiry Modal -->
  
+<div class="modal fade" id="inquiryModal3" tabindex="-1" aria-labelledby="inquiryModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel3"> <h6 ><button type="button" class="btn btn-warning btn-sm"> Enquiry for  </button><button type="button" class="btn btn-info btn-sm">Web  </button><button type="button" class="btn btn-danger btn-sm">Development Course</button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1371339413/photo/co-working-team-meeting-concept-businessman-using-smart-phone-and-digital-tablet-and-laptop.webp?a=1&b=1&s=612x612&w=0&k=20&c=1sB_7FQTwsnEaFaln2nJabQqdjewqVMINvEImcj6CE4='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-tourist"></i></div>
+                 <form id="acupressureBookingForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col">
+              <label for="patientName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="Name" placeholder="Enter patient's name" required>
+            </div>
+            <div class="col">
+              <label for="patientName" class="form-label">Email Address</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter email's id" required>
+            </div>
+</div>
 
+
+            <!-- Patient Age -->
+            <div class="row">
+            <div class="col">
+              <label for="applicantPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="applicantPhone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="col">
+              <label for="contactMethod" class="form-label">Preferred Contact Method</label>
+              <select class="form-select" id="contactMethod" required>
+                <option selected disabled>Select Contact Method</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone Call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Travel Information -->
+          <div class="row">
+            <div class="col">
+            <label for="courseType" class="form-label">Select Course Type</label>
+            <select class="form-select" id="courseType" required>
+              <option selected disabled>Select Course Type</option>
+              <option value="Front-end Development (HTML, CSS, JavaScript, React, Angular, Vue.js)">Front-end Development </option>
+              <option value="Back-end Development (Node.js, Python, Ruby on Rails, Java, PHP)">Back-end Development </option>
+              <option value="Full-Stack Development (combination of front-end and back-end)">Full-Stack Development </option>
+              
+            </select>
+            </div>
+           
+          </div>
+
+          <!-- Passport Information -->
+         
+
+          <!-- Additional Message -->
+          <div class="mb-3">
+            <label for="visaMessage" class="form-label">Additional Requirements or Message</label>
+            <textarea class="form-control" id="visaMessage" rows="4" placeholder="Enter any additional information or questions" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-success w-100">Submit Order</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="inquiryModal4" tabindex="-1" aria-labelledby="inquiryModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel4"> <h6 ><button type="button" class="btn btn-warning btn-sm"> Enquiry for  </button><button type="button" class="btn btn-info btn-sm">Networking  </button><button type="button" class="btn btn-danger btn-sm">Development Course</button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1127256894/photo/e-learning-concept-businessman-touching-a-modern-virtual-interface-with-icon-e-learning-of.webp?a=1&b=1&s=612x612&w=0&k=20&c=srmTFFi_6rFmxnIGgDW2L0bV3hfafXuEcJt1wxTg4ec='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-tourist"></i></div>
+                 <form id="acupressureBookingForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col">
+              <label for="patientName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="Name" placeholder="Enter patient's name" required>
+            </div>
+            <div class="col">
+              <label for="patientName" class="form-label">Email Address</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter email's id" required>
+            </div>
+</div>
+
+
+            <!-- Patient Age -->
+            <div class="row">
+            <div class="col">
+              <label for="applicantPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="applicantPhone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="col">
+              <label for="contactMethod" class="form-label">Preferred Contact Method</label>
+              <select class="form-select" id="contactMethod" required>
+                <option selected disabled>Select Contact Method</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone Call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Travel Information -->
+          <div class="row">
+            <div class="col">
+            <label for="courseType" class="form-label">Select Course Type</label>
+            <select class="form-select" id="courseType" required>
+              <option selected disabled>Select Course Type</option>
+              <option value=" Fundamentals of Networking"> Fundamentals of Networking </option>
+              <option value="Network Administration">Network Administration </option>
+              <option value="Network Security">Network Security </option>
+              <option value=" Cloud Networking"> Cloud Networking </option>
+              <option value="Data Center Networking">Data Center Networking </option>
+              <option value="Wireless Networking">Wireless Networking </option>
+              <option value="  Network Design and Architecture">  Network Design and Architecture </option>
+              <option value="VoIP and Unified Communications">VoIP and Unified Communications </option>
+              <option value="Routing and Switching">Routing and Switching </option>
+              <option value="  Network Monitoring and Management">  Network Monitoring and Management </option>
+              <option value="Network Virtualization">Network Virtualization </option>
+              <option value="Network Automation">Network Automation </option>
+            </select>
+            </div>
+           
+          </div>
+
+          <!-- Passport Information -->
+         
+
+          <!-- Additional Message -->
+          <div class="mb-3">
+            <label for="visaMessage" class="form-label">Additional Requirements or Message</label>
+            <textarea class="form-control" id="visaMessage" rows="4" placeholder="Enter any additional information or questions" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-success w-100">Submit Order</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="inquiryModal5" tabindex="-1" aria-labelledby="inquiryModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel5"> <h6 ><button type="button" class="btn btn-warning btn-sm"> Enquiry for  </button><button type="button" class="btn btn-info btn-sm">Hacking  </button><button type="button" class="btn btn-danger btn-sm">Course</button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1335707382/photo/abstract-virtual-code-skull-hologram-on-a-modern-coworking-room-background-cybercrime-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=YJL7UHoGETCMeJzxETMhFxYLkafTc1a9pvBvLCDS1PY='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-tourist"></i></div>
+                 <form id="acupressureBookingForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col">
+              <label for="patientName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="Name" placeholder="Enter patient's name" required>
+            </div>
+            <div class="col">
+              <label for="patientName" class="form-label">Email Address</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter email's id" required>
+            </div>
+</div>
+
+
+            <!-- Patient Age -->
+            <div class="row">
+            <div class="col">
+              <label for="applicantPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="applicantPhone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="col">
+              <label for="contactMethod" class="form-label">Preferred Contact Method</label>
+              <select class="form-select" id="contactMethod" required>
+                <option selected disabled>Select Contact Method</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone Call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Travel Information -->
+          <div class="row">
+            <div class="col">
+            <label for="courseType" class="form-label">Select Course Type</label>
+            <select class="form-select" id="courseType" required>
+              <option selected disabled>Select Course Type</option>
+              <option value=" Ethical Hacking"> Ethical Hacking </option>
+              <option value="Penetration Testing">Penetration Testingn </option>
+              <option value="Web Application Hacking">Web Application Hacking </option>
+              <option value=" Network Hacking"> Network Hacking </option>
+              <option value=" Mobile Hacking"> Mobile Hacking </option>
+              <option value="Malware Analysis">Malware Analysis </option>
+              <option value="  Forensics and Incident Response">  Forensics and Incident Response</option>
+              <option value="Cloud Security">Cloud Security </option>
+              <option value="IoT Hacking">IoT Hackingng </option>
+              <option value="  Scripting and Automation for Hackers">  Scripting and Automation for Hackers </option>
+              <option value="Bug Bounty Programs">Bug Bounty Programs </option>
+              <option value="Cryptography">Cryptography </option>
+            </select>
+            </div>
+           
+          </div>
+
+          <!-- Passport Information -->
+         
+
+          <!-- Additional Message -->
+          <div class="mb-3">
+            <label for="visaMessage" class="form-label">Additional Requirements or Message</label>
+            <textarea class="form-control" id="visaMessage" rows="4" placeholder="Enter any additional information or questions" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-success w-100">Submit Order</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="inquiryModal6" tabindex="-1" aria-labelledby="inquiryModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel6"> <h6 ><button type="button" class="btn btn-warning btn-sm"> Enquiry for  </button><button type="button" class="btn btn-info btn-sm">Graphic </button><button type="button" class="btn btn-danger btn-sm">Design Course</button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1353769234/photo/training-and-skill-development-concept-with-icons-of-online-course-conference-seminar-webinar.webp?a=1&b=1&s=612x612&w=0&k=20&c=DZadLbr5mBz-s5UXpsfQKHbw3VSu7LQqKQMRxjsBpYg='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-tourist"></i></div>
+                 <form id="acupressureBookingForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col">
+              <label for="patientName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="Name" placeholder="Enter patient's name" required>
+            </div>
+            <div class="col">
+              <label for="patientName" class="form-label">Email Address</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter email's id" required>
+            </div>
+</div>
+
+
+            <!-- Patient Age -->
+            <div class="row">
+            <div class="col">
+              <label for="applicantPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="applicantPhone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="col">
+              <label for="contactMethod" class="form-label">Preferred Contact Method</label>
+              <select class="form-select" id="contactMethod" required>
+                <option selected disabled>Select Contact Method</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone Call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Travel Information -->
+          <div class="row">
+            <div class="col">
+            <label for="courseType" class="form-label">Select Course Type</label>
+            <select class="form-select" id="courseType" required>
+              <option selected disabled>Select Course Type</option>
+              <option value=" Marketing and Advertising Graphic Design"> Marketing and Advertising Graphic DesignDesign </option>
+              <option value="User Interface (UI) Design">User Interface (UI) Design </option>
+              <option value="User Experience (UX) Design">User Experience (UX) Design</option>
+              <option value=" Packaging Design"> Packaging Design </option>
+              <option value="  Publication Graphic Design">  Publication Graphic Design </option>
+              <option value="Motion Graphic Design"> Motion Graphic Design </option>
+              <option value="  Environmental Graphic Design">  Environmental Graphic Design</option>
+              <option value="Illustration">Illustration </option>
+              <option value="Print Design">Print Design </option>
+              <option value="  Social Media Graphic Design">  Social Media Graphic Design </option>
+              <option value="Event Graphic Design">Event Graphic Design </option>
+              <option value="Fashion and Textile Graphic Design">Fashion and Textile Graphic Design </option>
+            </select>
+            </div>
+           
+          </div>
+
+          <!-- Passport Information -->
+         
+
+          <!-- Additional Message -->
+          <div class="mb-3">
+            <label for="visaMessage" class="form-label">Additional Requirements or Message</label>
+            <textarea class="form-control" id="visaMessage" rows="4" placeholder="Enter any additional information or questions" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-success w-100">Submit Order</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
      <!-- TESTIMONIAL -->
   <section id="review" class="review">
     <!-- Container for the reviews section -->
@@ -750,24 +1216,30 @@ http://www.templatemo.com/tm-516-known
         <div class="reviews-slider">
             <!-- Individual review boxes -->
             <div class="review-box">
-                <p>"I came to the acupressure service feeling overwhelmed by chronic back pain. After just a few sessions, I noticed a remarkable difference.." - Mrs. Smith, Parent</p>
+
+                <p>"The institute has been a life-changer for my child. The teachers are exceptional and truly care about each student." - Mrs. Patel, Parent</p>
                 <div class="stars">★★★★☆</div>
             </div>
             <div class="review-box">
-                 <p>"As someone who juggles a demanding job and family responsibilities, I often feel stressed and anxious.</p>
+
+                <p>"The personalized approach helped me gain confidence and succeed academically." - Rohan, Student</p>
                 <div class="stars">★★★★★</div>
             </div>
             <div class="review-box">
-                <p>"I was initially skeptical about acupressure, but I decided to give it a try after hearing about its benefits." - Mr. Anderson, Teacher</p>
-                <div class="stars">★★★★☆</div>
+
+              <h3>State-of-the-Art Facilities</h3>
+                <p>Modern classrooms, labs, and facilities for effective learning.</p>
+                <div class="stars">★★★</div>
             </div>
             <div class="review-box">
-                 <p>"I struggled with insomnia for years, trying various remedies with little success. A friend suggested acupressure, and I was amazed at the results." - Emily R., Doctort</p>
+                  <h3>Experienced Faculty</h3>
+                <p>Our staff is dedicated to providing the best education experience.</p>
                 <div class="stars">★★★★★</div>
             </div>
             <div class="review-box">
-                <p>"The acupressure service has transformed my approach to health and wellness." - Mrs. Johnson, Parent</p>
-                <div class="stars">★★★★☆</div>
+             <h3>Comprehensive Curriculum</h3>
+                <p>A well-rounded curriculum that prepares students for future success.</p>
+                <div class="stars">★★★★</div>
             </div>
             
         </div>
@@ -835,7 +1307,7 @@ http://www.templatemo.com/tm-516-known
 </style>
 
      <!-- CONTACT -->
-     <section id="contact">
+     <section id="contact"id="contact">
           <div class="container">
                <div class="row">
 
@@ -1074,21 +1546,21 @@ http://www.templatemo.com/tm-516-known
                               <h2>Contact Info</h2>
                          </div>
                          <address>
-                              <p>+65 2244 1100, +66 1800 1100</p>
-                              <p><a href="mailto:hello@youremail.co">hello@youremail.co</a></p>
+                              <p>+91 22434 11400, +91 18200 11050</p>
+                              <p><a href="mailto:support@institute.com">support@instiute.com</a></p>
                          </address>
-                         <div class="footer_menu">
+                        <div class="footer_menu">
                               <h2>Quick Links</h2>
                               <ul>
-                                   <li><a href="#">Career</a></li>
-                                   <li><a href="#">Investor</a></li>
-                                   <li><a href="#">Terms & Conditions</a></li>
-                                   <li><a href="#">Refund Policy</a></li>
+                                   <li><a href="#top"><i class="fa fa-home"></i></a></li>
+                                   <li><a href="#about" ><i class="fa fa-info-circle"></i></a></li>
+                                   <li><a href="#testimonial"><i class="fa fa-star"></i></a></li>
+                                   <li><a href="#courses"><i class="fa fa-book"></i></a></li>
                               </ul>
                          </div>
                     </div>
                </div>
-
+                
                <!-- Working Hours Section -->
                <div class="col-md-4 col-sm-6">
                     <div class="footer-info">
@@ -1199,7 +1671,7 @@ http://www.templatemo.com/tm-516-known
    <div class="contact-info" style="text-align: right; margin-right: 30px;">
         <b>Contact:</b> +91 12345 67890 
         <span style="margin-left: 20px;">
-            <b>Email:</b> <a href="mailto:contact@hostel.com">contact@hostel.com</a>
+            <b>Email:</b> <a href="mailto:contact@institute.com">contact@instiute.com</a>
         </span>
     </div>
 
@@ -1255,7 +1727,7 @@ http://www.templatemo.com/tm-516-known
     </style>
 
     <div class="copyright">
-        <span>&copy; Copyright <strong><span id="yearSpan"></span> Home Tuition</strong>. All Rights Reserved</span>
+        <span>&copy; Copyright <strong><span id="yearSpan"></span> Instiute</strong>. All Rights Reserved</span>
         <div id="translation"></div>
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=google_translate"></script>
         <script>
